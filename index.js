@@ -19,37 +19,34 @@ class Rl {
         prompt: '> ',
         // a function to evaluate user's input
         eval (cmd) {
-            // by default, evaluate the message
-            try {
-                // log the evaluation 
-                log(eval(cmd));
-            } catch (error) {
-                // log the error
-                log(error);
-                // and exit the session
-                process.exit(0);
-            }
+            // by default, log the command
+            log(cmd);
         }
     }
     // Rl instance
     #rl = null;
     #running = false;
 
-    constructor () {
-        // set instance
-        this.#rl = readline.createInterface({ input, output });
-        this.#running = true;
-    }
-
-    start (options = {}) {
+    constructor (options) {
         // customization...
         // set user's defined options
+        
         // the prompt
         if (options?.prompt && typeof options?.prompt === 'string')
             this.#options.prompt = options.prompt;
+        
         // the evaluator function
         if (options?.eval && isFunction(options?.eval)) 
             this.#options.eval = options.eval;
+
+        // set instance
+        this.#rl = readline.createInterface({ input, output });
+
+        // instance is running
+        this.#running = true;
+    }
+
+    start () {
         // start the system
         this.#run();
         // reference this instance
