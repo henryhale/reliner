@@ -1,4 +1,4 @@
-To <h1 align="center">reliner</h1>
+<h1 align="center">reliner</h1>
 
 
 A basic and customizable implementation of a REPL system based on NodeJS readline interface to power simple command line applications in javascript.
