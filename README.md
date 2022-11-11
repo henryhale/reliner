@@ -18,13 +18,13 @@ This provides an instance to work with the _standard input/output_ that is conta
 To create a new instance
 
 ```js
- // include the read.liner package
+ // import the package
  import Rl from '../index.js'; 
 
- const r = new Rl()
+ const r = new Rl();
 ```
 
-By default, the instance constructor can take an `options` argument to configure the _prompt_ style and also the _evaluator_ method.
+By default, the instance constructor can take an `options` argument to configure the _prompt_ style and _evaluator_ method.
 
 ```js
     const r = new Rl ({
