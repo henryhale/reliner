@@ -1,7 +1,8 @@
 <h1 align="center">reliner</h1>
 
 
-A basic and customizable implementation of a REPL system based on NodeJS readline interface to power simple command line applications in javascript.
+A basic and customizable implementation of a REPL system based on [NodeJS Readline Interface](https://nodejs.dev/en/api/v19/readline/)
+to power simple command line applications in javascript.
 
 > **NB:** _Dependencies free_, only utilizes inbuilt functions of the NodeJs runtime features; `node:process` and `node:console`. 
 
@@ -39,7 +40,8 @@ By default, the instance constructor can take an `options` argument to configure
 
 The `prompt` style is output before the cursor also as the interface is still active or running.
 
-The `evaluator` takes one argument `cmd` which is the user's input obtained from the terminal. Any operation in any accessible scope can be fire within this method e.g. data fetch, continous prompts, data storage, file operation... just like the normal terminal.
+The `evaluator` takes one argument `cmd` which is the user's input obtained from the terminal. 
+Any operation in any accessible scope can be fire within this method e.g. data fetch, continous prompts, data storage, file operation... just like the normal terminal.
 
 > NB: Inbuilt terminal commands like `mkdir` or `clear` won't run not until you specify what runs on a specific user input.
 
