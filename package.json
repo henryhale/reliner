@@ -1,24 +1,21 @@
 {
-  "name": "repl",
+  "name": "reliner",
   "version": "1.0.0",
-  "description": "A customizable REPL system for NodeJS",
+  "description": "A Customizable REPL system for NodeJS",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "hello": "node ./example/hello.js",
+    "math": "node ./example/math.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/henryhale/repl.git"
   },
   "keywords": [
     "repl",
-    "nodejs",
     "readline",
     "process"
   ],
   "author": "Henry Hale",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/henryhale/repl/issues"
   },
