@@ -12,7 +12,7 @@ function isFunction(fn) {
 process.on('beforeExit', () => log());
 
 // REPL model
-class Rl {
+class Reliner {
     // defaults
     #options = {
         // prompt prefix in the output
@@ -23,7 +23,7 @@ class Rl {
             log(cmd);
         }
     }
-    // Rl instance
+    // Reliner instance
     #rl = null;
     #running = false;
 
@@ -98,4 +98,4 @@ class Rl {
 }
 
 // Ready for use...
-export default Rl;
+export default Reliner;
