@@ -12,7 +12,7 @@ to power simple command line applications in javascript.
 
 Below are some of the notable features;
 
-- `Rl` class
+- `Reliner` class
 
 This provides an instance to work with the _standard input/output_ that is contained in the `node:process` i.e `input` and `output`.
 
@@ -20,15 +20,15 @@ To create a new instance
 
 ```js
  // import the package
- import Rl from '../index.js'; 
+ import Reliner from '../index.js'; 
 
- const r = new Rl();
+ const r = new Reliner();
 ```
 
 By default, the instance constructor can take an `options` argument to configure the _prompt_ style and _evaluator_ method.
 
 ```js
-    const r = new Rl ({
+    const r = new Reliner ({
         // prompt style
         prompt: '$ ',
         // evaluator
