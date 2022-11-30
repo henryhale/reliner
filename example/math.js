@@ -1,7 +1,12 @@
-import Repl from "../index.js";
+import Reliner from "../index.js";
 
-const r = new Repl({
+// initialize instance
+const r = new Reliner({
+
+    // prompt style 
     prompt: '$ math: ',
+
+    // evaluator method
     eval (cmd) {
         cmd = `${cmd}`;
         if (cmd.startsWith('.exit')) {

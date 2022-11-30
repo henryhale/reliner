@@ -1,9 +1,11 @@
-import Repl from "../index.js";
+import Reliner from "../index.js";
 
-// initialize
-const r = new Repl({
+// initialize instance
+const r = new Reliner({
+
     // my custom prompt
     promt: '$ ',
+
     // my evaluator
     eval (name) {
         // log data recieved from user
@@ -11,6 +13,7 @@ const r = new Repl({
         // close the interface
         close();
     }
+    
 });
 
 // Close the interface
